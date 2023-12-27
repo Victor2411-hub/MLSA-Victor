@@ -4,6 +4,37 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+/*animate the row of going down in my home component*/
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* add a slide in animation */
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -123,3 +154,4 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
