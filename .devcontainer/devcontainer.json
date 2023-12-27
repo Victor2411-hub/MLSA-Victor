@@ -23,16 +23,84 @@
         "esbenp.prettier-vscode",
         "GitHub.copilot",
         "ms-vscode.azure-account",
-        "ms-azuretools.vscode-azurestaticwebapps"
+        "ms-azuretools.vscode-azurestaticwebapps",
+        "oderwat.indent-rainbow"
       ],
       "settings": {
         "emmet.includeLanguages": {
           "javascript": "javascriptreact"
         },
-        "emmet.triggerExpansionOnTab": true
-      }
-    }
-  },
+        "emmet.triggerExpansionOnTab": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+          80
+        ],
+        "editor.tabSize": 2,
+        "editor.wordWrap": "on",
+        "eslint.alwaysShowStatus": true,
+        "eslint.format.enable": true,
+        "eslint.lintTask.enable": true,
+        "eslint.options": {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ]
+        },
+        "eslint.run": "onType",
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ],
+        "files.eol": "\n",
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "javascript.updateImportsOnFileMove.enabled": "always",
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "workbench.colorTheme": "GitHub Dark",
+        "workbench.editor.tabSizing": "shrink",
+        "workbench.iconTheme": "material-icon-theme",
+        "workbench.startupEditor": "newUntitledFile",
+        "workbench.tree.indent": 16
+      },
+      "tasks": [
+        {
+          "label": "npm: install",
+          "type": "shell",
+          "command": "npm install",
+          "problemMatcher": []
+        },
+        {
+          "label": "npm: start",
+          "type": "shell",
+          "command": "npm start",
+          "problemMatcher": []
+        },
+        {
+          "label": "npm: test",
+          "type": "shell",
+          "command": "npm test",
+          "problemMatcher": []
+        },
+        {
+          "label": "npm: build",
+          "type": "shell",
+          "command": "npm run build",
+          "problemMatcher": []
+        }
+      ]
+    },
+
 
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {},
@@ -47,4 +115,5 @@
   },
 
   "forwardPorts": [1234]
+}
 }
