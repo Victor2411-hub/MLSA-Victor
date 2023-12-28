@@ -45,7 +45,7 @@ const projectList = [
     title: "My Resume Site",
     description:
       "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://red-island-04a9ef110.4.azurestaticapps.net/",
+    url: "https://lively-hill-0c8f65d0f.4.azurestaticapps.net/",
   },
 ];
 
